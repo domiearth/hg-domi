@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Domi</title>
+    <style>
+        /* 基本樣式重設與字體設定 */
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #333;
+        }
+
+        /* 頂部導覽列容器 */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 3rem;
+            background-color: #fff;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        /* 左側 Logo */
+        .navbar-logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #000;
+        }
+        .navbar-logo span {
+            color: #4CAF50; /* 綠色點綴 */
+        }
+
+        /* 中間導覽連結 */
+        .navbar-links a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 1.2rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .navbar-links a:hover {
+            color: #2E8B57;
+        }
+
+        /* 主要橫幅 (Hero Section) */
+        .hero {
+            background-color: #2E8B57; /* 參考圖片中的主要綠色 */
+            padding: 6rem 3rem;
+            /* 使用 clip-path 創造右下角傾斜的效果 */
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 35vh; /* 設定一個高度 */
+        }
+
+        /* 橫幅中的文字 */
+        .hero-text {
+            color: white;
+            font-size: 4rem; /* 大字體 */
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* 頁面主要內容區域 */
+        .main-content {
+            padding: 4rem 3rem;
+            text-align: center;
+        }
+
+        /* 響應式設計：在中等螢幕尺寸下調整 */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 1rem;
+            }
+            .navbar-links {
+                margin-top: 1rem;
+            }
+            .hero-text {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="navbar-logo">
+            DOMI<span>.</span>
+        </div>
+        <nav class="navbar-links">
+            <a href="#">Journey</a>
+            <a href="#">Engage</a>
+            <a href="#">Empower</a>
+            <a href="#">About Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1 class="hero-text">hello domi</h1>
+        </div>
+        
+        <div class="main-content">
+            <p>This is a demonstration of the layout style.</p>
+        </div>
+    </main>
+
+</body>
+</html>
